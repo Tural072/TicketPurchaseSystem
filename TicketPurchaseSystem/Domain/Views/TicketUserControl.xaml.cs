@@ -12,22 +12,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using TicketPurchaseSystem.Domain.Entities;
 
-namespace TicketPurchaseSystem
+namespace TicketPurchaseSystem.Domain.Entities.Views
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for TicketUserControl.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class TicketUserControl : UserControl
     {
-        public MainWindow()
+        public TicketUserControl()
         {
             InitializeComponent();
-            using (var context=new DBEntities())
-            {
-                
-            }
         }
     }
 }

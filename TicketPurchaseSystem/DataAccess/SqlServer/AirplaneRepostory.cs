@@ -11,30 +11,30 @@ namespace TicketPurchaseSystem.DataAccess.SqlServer
 {
     public class AirplaneRepostory : IAirplaneRepostory
     {
-        DBEntities context = new DBEntities();
-        public void AddData(Airplanes data)
+        DBEntities1 context = new DBEntities1();
+        public void AddData(Airplane data)
         {
             throw new NotImplementedException();
         }
 
-        public void DeleteData(Airplanes data)
+        public void DeleteData(Airplane data)
         {
             throw new NotImplementedException();
         }
 
-        public ObservableCollection<Airplanes> GetAllData()
+        public ObservableCollection<Airplane> GetAllData()
         {
             var airplane = from a in context.Airplanes select a;
-            return new ObservableCollection<Airplanes>(airplane);
+            return new ObservableCollection<Airplane>(airplane);
         }
 
-        public Airplanes GetData(int id)
+        public Airplane GetData(int id)
         {
             var airplane = context.Airplanes.FirstOrDefault(a => a.Id == id);
             return airplane;
         }
 
-        public void UpdateData(Airplanes data)
+        public void UpdateData(Airplane data)
         {
             throw new NotImplementedException();
         }

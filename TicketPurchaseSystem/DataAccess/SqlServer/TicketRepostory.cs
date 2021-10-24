@@ -9,29 +9,29 @@ using TicketPurchaseSystem.Domain.Entities;
 
 namespace TicketPurchaseSystem.DataAccess.SqlServer
 {
-    public class TicketRepostory : IScheludeRepostory
+    public class TicketRepostory : ITicketRepostory
     {
-        public void AddData(Schedules data)
+        public void AddData(Ticket data)
         {
             throw new NotImplementedException();
         }
 
-        public void DeleteData(Schedules data)
+        public void DeleteData(Ticket data)
         {
             throw new NotImplementedException();
         }
 
-        public ObservableCollection<Schedules> GetAllData()
+        public ObservableCollection<Ticket> GetAllData()
         {
             throw new NotImplementedException();
         }
 
-        public Schedules GetData(int id)
+        public Ticket GetData(int id)
         {
             throw new NotImplementedException();
         }
 
-        public void UpdateData(Schedules data)
+        public void UpdateData(Ticket data)
         {
             throw new NotImplementedException();
         }

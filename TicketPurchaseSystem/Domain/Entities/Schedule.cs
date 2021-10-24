@@ -12,22 +12,25 @@ namespace TicketPurchaseSystem.Domain.Entities
     using System;
     using System.Collections.Generic;
     
-    public partial class Cities
+    public partial class Schedule
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Cities()
+        public Schedule()
         {
-            this.Tickets = new HashSet<Tickets>();
+            this.Cities = new HashSet<City>();
+            this.Tickets = new HashSet<Ticket>();
         }
     
         public int Id { get; set; }
-        public string Name { get; set; }
-        public Nullable<int> AirplaneId { get; set; }
-        public Nullable<int> ScheludeId { get; set; }
+        public System.DateTime StartDateTime { get; set; }
     
-        public virtual Airplanes Airplanes { get; set; }
-        public virtual Schedules Schedules { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Tickets> Tickets { get; set; }
+        public virtual ICollection<City> Cities { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Ticket> Tickets { get; set; }
+        public override string ToString()
+        {
+            return StartDateTime.ToString();
+        }
     }
 }

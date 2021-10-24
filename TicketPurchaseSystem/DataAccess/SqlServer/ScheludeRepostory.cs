@@ -11,27 +11,29 @@ namespace TicketPurchaseSystem.DataAccess.SqlServer
 {
     public class ScheludeRepostory : IScheludeRepostory
     {
-        public void AddData(Schedules data)
+        DBEntities1 DBEntities1 = new DBEntities1();
+        public void AddData(Schedule data)
         {
             throw new NotImplementedException();
         }
 
-        public void DeleteData(Schedules data)
+        public void DeleteData(Schedule data)
         {
             throw new NotImplementedException();
         }
 
-        public ObservableCollection<Schedules> GetAllData()
+        public ObservableCollection<Schedule> GetAllData()
+        {
+            var schedules = from a in DBEntities1.Schedules select a;
+            return new ObservableCollection<Schedule>(schedules);
+        }
+
+        public Schedule GetData(int id)
         {
             throw new NotImplementedException();
         }
 
-        public Schedules GetData(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void UpdateData(Schedules data)
+        public void UpdateData(Schedule data)
         {
             throw new NotImplementedException();
         }

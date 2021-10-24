@@ -11,27 +11,27 @@ namespace TicketPurchaseSystem.DataAccess.SqlServer
 {
     public class FlyTypeRepostory : IFlyTypeRepostory
     {
-        public void AddData(FlyTypes data)
+        public void AddData(FlyType data)
         {
             throw new NotImplementedException();
         }
 
-        public void DeleteData(FlyTypes data)
+        public void DeleteData(FlyType data)
         {
             throw new NotImplementedException();
         }
 
-        public ObservableCollection<FlyTypes> GetAllData()
+        public ObservableCollection<FlyType> GetAllData()
         {
             throw new NotImplementedException();
         }
 
-        public FlyTypes GetData(int id)
+        public FlyType GetData(int id)
         {
             throw new NotImplementedException();
         }
 
-        public void UpdateData(FlyTypes data)
+        public void UpdateData(FlyType data)
         {
             throw new NotImplementedException();
         }

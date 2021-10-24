@@ -64,7 +64,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="MainWindow.xaml">
+    <Page Include="Domain\Views\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -85,13 +85,14 @@
     <Compile Include="Domain\Abstractions\IRepostory.cs" />
     <Compile Include="Domain\Abstractions\IScheludeRepostory.cs" />
     <Compile Include="Domain\Abstractions\ITicketRepostory.cs" />
-    <Compile Include="Domain\Entities\Airplanes.cs">
+    <Compile Include="Domain\AdditionalClass\ObserverHelper.cs" />
+    <Compile Include="Domain\Entities\Airplane.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Domain\Entities\Cities.cs">
+    <Compile Include="Domain\Entities\City.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Domain\Entities\FlyTypes.cs">
+    <Compile Include="Domain\Entities\FlyType.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Domain\Entities\Model1.Context.cs">
@@ -109,21 +110,28 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Domain\Entities\Pilots.cs">
+    <Compile Include="Domain\Entities\Pilot.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Domain\Entities\Schedules.cs">
+    <Compile Include="Domain\Entities\Schedule.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Domain\Entities\Tickets.cs">
+    <Compile Include="Domain\Entities\Ticket.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="MainWindow.xaml.cs">
+    <Compile Include="Domain\Views\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Domain\Views\TicketUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Domain\Views\TicketUserControl.xaml.cs">
+      <DependentUpon>TicketUserControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -157,12 +165,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <Content Include="Domain\Entities\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Model1.Context.cs</LastGenOutput>
       <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
     </Content>
     <Content Include="Domain\Entities\Model1.tt">
       <Generator>TextTemplatingFileGenerator</Generator>

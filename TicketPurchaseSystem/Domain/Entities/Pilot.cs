@@ -12,24 +12,20 @@ namespace TicketPurchaseSystem.Domain.Entities
     using System;
     using System.Collections.Generic;
     
-    public partial class Airplanes
+    public partial class Pilot
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Airplanes()
+        public Pilot()
         {
-            this.Cities = new HashSet<Cities>();
-            this.Tickets = new HashSet<Tickets>();
+            this.Airplanes = new HashSet<Airplane>();
         }
     
         public int Id { get; set; }
         public string Name { get; set; }
-        public int PassengerCount { get; set; }
-        public Nullable<int> PilotId { get; set; }
+        public string Surename { get; set; }
     
-        public virtual Pilots Pilots { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Cities> Cities { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Tickets> Tickets { get; set; }
+        public virtual ICollection<Airplane> Airplanes { get; set; }
+        
     }
 }

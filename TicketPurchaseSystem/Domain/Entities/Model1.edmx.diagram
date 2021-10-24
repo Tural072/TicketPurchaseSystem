@@ -4,20 +4,20 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="213e91077a1f4b03a370a14e474a1ba8" Name="Diagram1">
-        <EntityTypeShape EntityType="DBModel.Airplanes" Width="1.5" PointX="0.75" PointY="5.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="DBModel.Cities" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="DBModel.FlyTypes" Width="1.5" PointX="3" PointY="5.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="DBModel.Pilots" Width="1.5" PointX="1.5" PointY="8.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="DBModel.Schedules" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="DBModel.Tickets" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
-        <AssociationConnector Association="DBModel.FK__Airplanes__Pilot__3B75D760" ManuallyRouted="false" />
-        <AssociationConnector Association="DBModel.FK__Cities__Airplane__403A8C7D" ManuallyRouted="false" />
-        <AssociationConnector Association="DBModel.FK__Tickets__Airplan__44FF419A" ManuallyRouted="false" />
-        <AssociationConnector Association="DBModel.FK__Cities__Schelude__412EB0B6" ManuallyRouted="false" />
-        <AssociationConnector Association="DBModel.FK__Tickets__CityId__440B1D61" ManuallyRouted="false" />
-        <AssociationConnector Association="DBModel.FK__Tickets__FlyType__46E78A0C" ManuallyRouted="false" />
-        <AssociationConnector Association="DBModel.FK__Tickets__Schelud__45F365D3" ManuallyRouted="false" />
+      <Diagram DiagramId="7284eeadb3be4289b1ec6955730333d4" Name="Diagram1">
+        <EntityTypeShape EntityType="DBModel.Airplane" Width="1.5" PointX="0.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBModel.City" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBModel.FlyType" Width="1.5" PointX="3" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBModel.Pilot" Width="1.5" PointX="1.5" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBModel.Schedule" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBModel.Ticket" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="DBModel.FK__Airplanes__Pilot__2B3F6F97" ManuallyRouted="false" />
+        <AssociationConnector Association="DBModel.FK__Cities__Airplane__2E1BDC42" ManuallyRouted="false" />
+        <AssociationConnector Association="DBModel.FK__Tickets__Airplan__3A81B327" ManuallyRouted="false" />
+        <AssociationConnector Association="DBModel.FK__Cities__Schelude__2F10007B" ManuallyRouted="false" />
+        <AssociationConnector Association="DBModel.FK__Tickets__CityId__398D8EEE" ManuallyRouted="false" />
+        <AssociationConnector Association="DBModel.FK__Tickets__FlyType__3C69FB99" ManuallyRouted="false" />
+        <AssociationConnector Association="DBModel.FK__Tickets__Schelud__3B75D760" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

@@ -7,7 +7,7 @@ using TicketPurchaseSystem.Domain.Entities;
 
 namespace TicketPurchaseSystem.Domain.Abstractions
 {
-    public interface IFlyTypeRepostory:IRepostory<FlyTypes>
+    public interface IFlyTypeRepostory:IRepostory<FlyType>
     {
     }
 }

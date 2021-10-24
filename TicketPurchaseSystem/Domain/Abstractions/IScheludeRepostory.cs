@@ -7,7 +7,7 @@ using TicketPurchaseSystem.Domain.Entities;
 
 namespace TicketPurchaseSystem.Domain.Abstractions
 {
-    public interface IScheludeRepostory : IRepostory<Schedules>
+    public interface IScheludeRepostory : IRepostory<Schedule>
     {
     }
 }

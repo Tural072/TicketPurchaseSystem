@@ -7,7 +7,7 @@ using TicketPurchaseSystem.Domain.Entities;
 
 namespace TicketPurchaseSystem.Domain.Abstractions
 {
-    public interface ITicketRepostory : IRepostory<Tickets>
+    public interface ITicketRepostory : IRepostory<Ticket>
     {
     }
 }

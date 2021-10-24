@@ -11,27 +11,29 @@ namespace TicketPurchaseSystem.DataAccess.SqlServer
 {
     public class CityRepostory : ICityRepostory
     {
-        public void AddData(Cities data)
+        DBEntities1 DBEntities1 = new DBEntities1();
+        public void AddData(City data)
         {
             throw new NotImplementedException();
         }
 
-        public void DeleteData(Cities data)
+        public void DeleteData(City data)
         {
             throw new NotImplementedException();
         }
 
-        public ObservableCollection<Cities> GetAllData()
+        public ObservableCollection<City> GetAllData()
+        {
+            var cities = from a in DBEntities1.Cities select a;
+            return new ObservableCollection<City>(cities);
+        }
+
+        public City GetData(int id)
         {
             throw new NotImplementedException();
         }
 
-        public Cities GetData(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void UpdateData(Cities data)
+        public void UpdateData(City data)
         {
             throw new NotImplementedException();
         }

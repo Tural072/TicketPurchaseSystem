@@ -11,27 +11,29 @@ namespace TicketPurchaseSystem.DataAccess.SqlServer
 {
     public class PilotRepostory : IPilotRepostory
     {
-        public void AddData(Pilots data)
+        DBEntities1 DBEntities1 = new DBEntities1();
+        public void AddData(Pilot data)
         {
             throw new NotImplementedException();
         }
 
-        public void DeleteData(Pilots data)
+        public void DeleteData(Pilot data)
         {
             throw new NotImplementedException();
         }
 
-        public ObservableCollection<Pilots> GetAllData()
+        public ObservableCollection<Pilot> GetAllData()
+        {
+            var types = from a in DBEntities1.Pilots select a;
+            return new ObservableCollection<Pilot>(types);
+        }
+
+        public Pilot GetData(int id)
         {
             throw new NotImplementedException();
         }
 
-        public Pilots GetData(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void UpdateData(Pilots data)
+        public void UpdateData(Pilot data)
         {
             throw new NotImplementedException();
         }
